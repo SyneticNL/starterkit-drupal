@@ -1,0 +1,42 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": [
+        "form-item--radio-checkbox",
+        "form-type-checkbox"
+      ]
+    }
+  },
+  "input": {
+    "include()": {
+      "pattern": "atoms-input",
+      "with": {
+        "attributes": {
+          "Attribute()": {
+            "type": "checkbox",
+            "id": "checkbox",
+            "class": [
+              "form-item__input--checkbox"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "label": {
+    "include()": {
+      "pattern": "atoms-label",
+      "with": {
+        "title": "Checkbox example",
+        "attributes": {
+          "Attribute()": {
+            "for": "checkbox",
+            "class": [
+              "option"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

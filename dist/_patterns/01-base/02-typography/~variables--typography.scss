@@ -1,7 +1,7 @@
-/*
-* @file _variables--typography.scss
-*
-* Define variables regarding typography (eg: font-weights, sizes, text colors)
-*/
+// @file _variables--typography.scss
+// Define variables regarding typography (eg: font-weights, sizes, text colors)
 
-$body-color: $black;
+$font-family--base: Verdana;
+// $font-family--headings: ;
+
+$font-size--base: 1.6rem;

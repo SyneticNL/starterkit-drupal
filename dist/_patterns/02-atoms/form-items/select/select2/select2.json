@@ -1,0 +1,72 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": [
+        "form-item__select",
+        "js-select2"
+      ]
+    }
+  },
+  "options": [
+    {
+      "type": "option",
+      "value": "1",
+      "label": "Option 1"
+    },
+    {
+      "type": "option",
+      "value": "2",
+      "label": "Option 2"
+    },
+    {
+      "type": "option",
+      "value": "3",
+      "label": "Option 3"
+    },
+    {
+      "type": "option",
+      "value": "4",
+      "label": "Option 4"
+    },
+    {
+      "type": "option",
+      "value": "5",
+      "label": "Option 5"
+    },
+    {
+      "type": "option",
+      "value": "6",
+      "label": "Option 6"
+    },
+    {
+      "type": "option",
+      "value": "7",
+      "label": "Option 7"
+    },
+    {
+      "type": "option",
+      "value": "8",
+      "label": "Option 8"
+    },
+    {
+      "type": "option",
+      "value": "9",
+      "label": "Option 9"
+    },
+    {
+      "type": "option",
+      "value": "10",
+      "label": "Option 10"
+    },
+    {
+      "type": "option",
+      "value": "11",
+      "label": "Option 11"
+    },
+    {
+      "type": "option",
+      "value": "12",
+      "label": "Option 12"
+    }
+  ]
+}

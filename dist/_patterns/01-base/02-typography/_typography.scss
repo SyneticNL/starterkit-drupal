@@ -5,7 +5,13 @@
  */
 
 html {
+  color: $base--color;
+  font-family: $font-family--base;
   font-size: 10px;
+}
+
+body {
+  font-size: $font-size--base;
 }
 
 @import "~fonts";

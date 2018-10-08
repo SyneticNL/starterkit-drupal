@@ -1,0 +1,38 @@
+// @file
+// Styling for checkbox items.
+
+// Variables.
+$checkbox--size: 1.6rem;
+$checkbox--border-radius: .2rem;
+$checkbox--icon: $icon-check;
+$checkbox--icon-size: 1.25rem;
+$checkbox--vertical-p-fix: .1rem;
+
+.form-type-checkbox {
+  input {
+    &:checked + label {
+      &:after {
+        color: $radio-checkbox--active-color;
+      }
+    }
+  }
+  label {
+    line-height: $checkbox--size + ($form-item--border-size * 2);
+    &.option {
+      width: 100%; // Checkboxes like this type are meant for a layout like 'Terms of service'.
+    }
+    &:before {
+      width: $checkbox--size;
+      height: $checkbox--size;
+      border-radius: $checkbox--border-radius;
+    }
+    &:after {
+      @include icon-font($icon-family-name);
+      content: $checkbox--icon;
+      top: ($checkbox--size / 2) + $checkbox--vertical-p-fix;
+      left: ($checkbox--size / 2) + $checkbox--vertical-p-fix;
+      margin: - $checkbox--icon-size / 2;
+      font-size: $checkbox--icon-size;
+    }
+  }
+}

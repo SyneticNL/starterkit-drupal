@@ -1,0 +1,61 @@
+// @file
+// Shared styling for both radio and checkbox items.
+
+// Editable variables for radio and checkbox items.
+$radio-checkbox--active-color: $form-item--focus-color;
+
+.form-item--radio-checkbox {
+  position: relative;
+  & + & {
+    margin-top: .3rem;
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    // Active styling
+    &:checked + label {
+      &:before {
+        border-color: $radio-checkbox--active-color;
+      }
+      &:after {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+  label {
+    position: relative;
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 3rem;
+    cursor: pointer;
+    transition: color $form-item--transition-timing ease-in-out;
+    &.option {
+      font-weight: normal;
+    }
+    &:hover {
+      color: $radio-checkbox--active-color
+    }
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      display: block;
+    }
+    &:before {
+      left: 0;
+      background-color: $white;
+      border: $form-item--border-size solid $form-item--border-color;
+      transition: border-color $form-item--transition-timing ease-in-out;
+    }
+    &:after {
+      color: $white;
+      opacity: 0;
+      transform: scale(0);
+      transition: color $form-item--transition-timing ease-in-out, opacity $form-item--transition-timing ease-in-out, transform $form-item--transition-timing ease-in-out;
+    }
+  }
+}

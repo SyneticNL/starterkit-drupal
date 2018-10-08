@@ -1,0 +1,22 @@
+// @file
+// General variables for form items.
+
+// Font sizes.
+$form-item--font-size: $font-size--base !default;
+$form-item--font-size--small: 1.4rem !default;
+ 
+// Spacers.
+$form-item--field-spacer: .5rem;
+$form-item--padding-horizontal: 1rem;
+$form-item--padding-vertical: 1rem;
+
+// Borders.
+$form-item--border-size: .1rem;
+$form-item--border-color: $gray;
+
+// Colors.
+$form-item--inactive-color: $gray;
+$form-item--focus-color: $primary-color;
+
+// Transition.
+$form-item--transition-timing: .2s;

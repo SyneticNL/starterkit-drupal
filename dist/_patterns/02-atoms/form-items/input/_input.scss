@@ -1,0 +1,16 @@
+// @file
+// Styling for general input items.
+
+// Input reset styling.
+input {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-item--wide {
+  width: 100%;
+}

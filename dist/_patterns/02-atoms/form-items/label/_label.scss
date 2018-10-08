@@ -1,0 +1,16 @@
+// @file
+// Purpose of the file.
+
+.form-item {
+  label,
+  .fieldset-legend {
+    font-weight: bold;
+  }
+
+  // Form-item label.
+  &__label {
+    display: block;
+    margin-bottom: $form-item--field-spacer;
+  }
+}
+ 

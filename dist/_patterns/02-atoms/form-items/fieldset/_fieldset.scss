@@ -1,0 +1,14 @@
+//
+// @_fieldset.scss
+// Short description describing the file.
+ 
+.fieldset {
+  padding: 0.5rem 1rem 1rem;
+  border: 1px solid $gray-light-4;
+  &__legend {
+    display: block;
+    width: auto;
+    padding: 0 0.5rem;
+    white-space: normal;
+  }
+}

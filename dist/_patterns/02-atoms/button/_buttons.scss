@@ -1,22 +1,29 @@
-//General Button
+// @file
+// General button styling.
+
+$button--padding-vertical: 1rem;
+$button--padding-horizontal: 1.5rem;
+
+$button--border-radius: 0;
+
 .button {
   display: inline-block;
-  padding: 0.8rem 2.2rem;
-  color: $white;
-  text-decoration: none;
-  text-align: center;
+  padding: $button--padding-vertical $button--padding-horizontal;
   background: $primary-color;
   border: none;
-  box-shadow: inset 0 -3px 0 0 $secondary-color;
+  border-radius: $button--border-radius;
+  font-size: $font-size--base;
+  color: $white;
+  text-decoration: none;
   cursor: pointer;
+  transition: background .2s ease-in-out;
   &:visited {
     color: $white;
   }
   &:hover,
   &:focus {
-    color: $white;
+    background: $secondary-color;
     text-decoration: none;
-    box-shadow: inset 0 -100px 0 0 $secondary-color;
   }
   + .button {
     margin-left: 1rem;

@@ -1,0 +1,45 @@
+{
+  "attributes": {
+      "Attribute()": {
+          "class": "form-fieldset"
+      }
+  },
+  "legend": {
+    "attributes": {
+      "Attribute()": {
+        "class": [
+          "title"
+        ]
+      }
+    },
+    "title": "Fieldset Title"
+  },
+  "children": {
+    "include()": {
+      "pattern": "atoms-field",
+      "with": {
+        "attributes": {
+          "Attribute()": {
+            "class": "form-item"
+          }
+        },
+        "items": [
+          {
+            "content": {
+              "include()": {
+                "pattern": "atoms-label"
+              }
+            }
+          },
+          {
+            "content": {
+              "include()": {
+                "pattern": "atoms-input-text-wide"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
