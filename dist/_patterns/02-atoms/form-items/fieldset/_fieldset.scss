@@ -11,4 +11,36 @@
     padding: 0 0.5rem;
     white-space: normal;
   }
+  &.form-item--inline {
+    display: block;
+    padding: 0;
+    border: none;
+    .fieldset {
+      @include media-breakpoint-up(md) {
+        &__legend {
+          float: left;
+          width: $form-item--label-width;
+          margin: 0;
+          padding-left: 0;
+          line-height: 1;
+        }
+        &-wrapper {
+          display: inline-block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Checkbox and radios fix.
+.radios--wrapper,
+.checkboxes--wrapper {
+  &.form-item--inline {
+    .fieldset-wrapper {
+      @include media-breakpoint-up(md) {
+        width: calc(100% - (#{$form-item--label-width} + .5rem));
+      }
+    }
+  }
 }

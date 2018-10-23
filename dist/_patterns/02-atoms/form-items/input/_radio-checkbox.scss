@@ -4,7 +4,8 @@
 // Editable variables for radio and checkbox items.
 $radio-checkbox--active-color: $form-item--focus-color;
 
-.form-item--radio-checkbox {
+.form-type-checkbox,
+.form-type-radio {
   position: relative;
   & + & {
     margin-top: .3rem;

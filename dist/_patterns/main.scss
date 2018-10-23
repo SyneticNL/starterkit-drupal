@@ -2,12 +2,10 @@
 @import "01-base/~variables";
 @import "02-atoms/~variables";
 
-// In case of bootstrap use uncomment those here.
-//@import "../../../node_modules/bootstrap/scss/functions";
-//@import "../../../node_modules/bootstrap/scss/variables";
-//@import "../../../node_modules/bootstrap/scss/mixins";
-//@import "../../../node_modules/bootstrap/scss/print";
+// Load vendors.
+@import "vendors/vendors";
 
+// Import pattern styles.
 @import "01-base/**/*.scss";
 @import "02-atoms/**/*.scss";
 @import "03-molecules/**/*.scss";

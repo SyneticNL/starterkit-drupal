@@ -1,6 +1,10 @@
 // @file
 // General variables for form items.
 
+// Form item sizes.
+$form-item--label-width: 17rem;
+$form-item--label-padding--v: 1rem;
+
 // Font sizes.
 $form-item--font-size: $font-size--base !default;
 $form-item--font-size--small: 1.4rem !default;
@@ -13,6 +17,7 @@ $form-item--padding-vertical: 1rem;
 // Borders.
 $form-item--border-size: .1rem;
 $form-item--border-color: $gray;
+$form-item--border-radius: 0;
 
 // Colors.
 $form-item--inactive-color: $gray;

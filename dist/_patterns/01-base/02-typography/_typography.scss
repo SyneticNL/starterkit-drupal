@@ -1,11 +1,9 @@
-/**
- *  _typography.scss
- *
- * Import fonts and set basic html size.
- */
+// @file
+// Import fonts and set basic html size.
+@import "~fonts";
 
 html {
-  color: $base--color;
+  color: $body-color;
   font-family: $font-family--base;
   font-size: 10px;
 }
@@ -14,4 +12,3 @@ body {
   font-size: $font-size--base;
 }
 
-@import "~fonts";
