@@ -1,0 +1,7 @@
+// @file
+// Color sets to use in scss.
+ 
+$system-colors:
+    (error, $error-color, $error-color--light),
+    (warning, $warning-color, $warning-color--light),
+    (status, $valid-color, $valid-color--light);

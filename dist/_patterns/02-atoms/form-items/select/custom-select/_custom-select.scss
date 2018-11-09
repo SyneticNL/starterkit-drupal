@@ -20,7 +20,7 @@ $select--trigger-size: 3.8rem;
     border: 1px solid;
     border-color: $form-item--border-color;
     border-radius: 0;
-    color: $base--color;
+    color: $body-color;
     font-family: $font-family--base;
     font-size: $form-item--font-size;
     width: 100%;
@@ -34,7 +34,7 @@ $select--trigger-size: 3.8rem;
 
     &:hover {
       + .custom-select__trigger {
-        color: $base--color;
+        color: $body-color;
       }
     }
 
