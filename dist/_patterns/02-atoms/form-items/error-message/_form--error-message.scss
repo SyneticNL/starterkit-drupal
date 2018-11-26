@@ -1,0 +1,9 @@
+// @file
+// Styling for form errors.
+
+.form-item__error-message {
+  margin-top: $form-item--field-spacer;
+  color: $warning-color;
+  font-size: $form-item--font-size--small;
+}
+ 

@@ -1,0 +1,23 @@
+// @file
+// Styling for text fields, textareas and password fields.
+
+// General input styling.
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea {
+  padding: $form-item--padding-vertical $form-item--padding-horizontal;
+  background: $white;
+  border: $form-item--border-size solid $form-item--border-color;
+  border-radius: 0;
+  font-size: $form-item--font-size;
+  transition: border-color .2s ease-in-out;
+  &:focus {
+    border-color: $form-item--focus-color;
+    outline: none;
+  }
+}

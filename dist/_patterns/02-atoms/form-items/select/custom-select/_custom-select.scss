@@ -1,0 +1,75 @@
+// @file
+// Styling for custom select.
+
+// Variables.
+$select--icon: $icon-arrow-down;
+$select--icon-size: 1.8rem;
+$select--trigger-size: 3.8rem;
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  &--wide {
+    width: 100%;
+  }
+
+  .form-select {
+    padding: $form-item--padding-vertical $form-item--padding-horizontal;
+    padding-right: $select--trigger-size + .2rem;
+    background-color: $white;
+    border: 1px solid;
+    border-color: $form-item--border-color;
+    border-radius: 0;
+    color: $body-color;
+    font-family: $font-family--base;
+    font-size: $form-item--font-size;
+    width: 100%;
+    transition: color .2s ease-in-out, border-color .2s ease-in-out;
+    -webkit-appearance: none;
+
+    // IE11 fix to hide arrow.
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:hover {
+      + .custom-select__trigger {
+        color: $body-color;
+      }
+    }
+
+    &:focus {
+      border-color: $form-item--focus-color;
+      color: $form-item--focus-color;
+      outline: none;
+
+      + .custom-select__trigger {
+        color: $form-item--focus-color;
+      }
+    }
+  }
+
+  &__trigger {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 0;
+    height: calc(100% - 4px);
+    width: $select--trigger-size;
+    background-color: $white;
+    color: $form-item--inactive-color;
+    pointer-events: none;
+    transition: color $form-item--transition-timing ease-in-out;
+    &-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &:before {
+        @include icon-font($icon-family-name);
+        content: $select--icon;
+        font-size: $select--icon-size;
+      }
+    }
+  }
+}

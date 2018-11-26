@@ -1,0 +1,29 @@
+// @file
+// Styling for radio items.
+
+// Variables.
+$radio--size: 1.8rem;
+$radio--size-inner: 1rem;
+$radio--position: (($radio--size - $radio--size-inner) / 2) + $form-item--border-size;
+
+.form-type-radio {
+  label {
+    line-height: $radio--size + ($form-item--border-size * 2);
+    &:before,
+    &:after {
+      border-radius: 100%;
+    }
+    &:before {
+      width: $radio--size;
+      height: $radio--size;
+    }
+    &:after {
+      top: $radio--position;
+      left: $radio--position;
+      height: $radio--size-inner;
+      width: $radio--size-inner;
+      background-color: $radio-checkbox--active-color;
+    }
+  }
+}
+

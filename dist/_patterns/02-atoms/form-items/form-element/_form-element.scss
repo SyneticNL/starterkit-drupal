@@ -1,0 +1,60 @@
+// @file
+// Styling for form elements.
+
+.form-item {
+  margin-bottom: 2rem;
+  // Form-item inline styling.
+  &--inline,
+  &--inline-nested .form-item {
+    display: flex;
+    flex-wrap: wrap;
+    @include media-breakpoint-up(md) {
+      align-items: flex-start;
+    }
+    > legend,
+    > label {
+      flex: 0 0 100%;
+      font-weight: bold;
+      @include media-breakpoint-up(md) {
+        flex: 0 0 $form-item--label-width;
+        padding-right: $form-item--field-spacer;
+      }
+    }
+    input,
+    .custom-select,
+    .form-textarea-wrapper,
+    .form-item__field-wrap {
+      flex: 1 0 30%;
+    }
+    > .form-item__error-message,
+    > .description {
+      flex: 0 0 100%;
+      @include media-breakpoint-up(md) {
+        padding-left: $form-item--label-width;
+      }
+    }
+  }
+  // Fix line height for form item labels.
+  &--inline {
+    > label {
+      margin-top: 1rem;
+    }
+  }
+  // Fix for drupal css.
+  &--inline-nested .form-item {
+    display: flex !important;
+  }
+
+  // Form wrap, in case of suffix / prefix.
+  &__field-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+  }
+  &__prefix {
+    margin-right: $form-item--field-spacer;
+  }
+  &__suffix {
+    margin-left: $form-item--field-spacer;
+  }
+}

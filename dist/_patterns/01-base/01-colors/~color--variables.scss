@@ -1,5 +1,7 @@
-//
-// Grayscale
+// @file
+// List of color variables used in the site.
+
+// Gray Tints.
 $white: #fff;
 $black: #000;
 
@@ -14,14 +16,14 @@ $gray-light-5: #c9cdd1;
 $gray-dark-1: #969a9e;
 $gray-dark-2: #707375;
 $gray-dark-3: #4b4d4f;
-$gray-dark-3a: #383a3b;
-$gray-dark-4: #262727;
+$gray-dark-4: #383a3b;
+$gray-dark-5: #262727;
 
-// Brand Colors
+// Brand Colors.
 $primary-color: #4A90E2 !default;
 $secondary-color: #0A5995 !default;
 
-// System Colors
+// System Colors.
 $error-color: #d52b1e; // Error Color
 $error-color--light: #fae9e8; // Error Color Light
 $warning-color: #f48c00; // Warning Color
@@ -29,3 +31,5 @@ $warning-color--light: #fef4e6; // Warning Color light
 $valid-color: #5daa1a; // Valid Color
 $valid-color--light: #cbf1ab; // Valid Color Light
 
+// Content Colors.
+$body-color: $gray-dark-5;

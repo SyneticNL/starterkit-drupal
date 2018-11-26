@@ -1,0 +1,6 @@
+{% set base_class = base_class|default('legend') %}
+{% set span_base_class = span_base_class|default(base_class ~ '__span') %}
+
+<legend{{ add_attributes(attributes, bem(base_class, (modifiers), blockname, classes)) }}>
+  <span{{ add_attributes(span_attributes, bem(span_base_class, (span_modifiers), span_blockname, span_classes)) }}>{{ title }}</span>
+</legend>

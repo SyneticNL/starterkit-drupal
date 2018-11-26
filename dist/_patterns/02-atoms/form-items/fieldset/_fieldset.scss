@@ -1,0 +1,46 @@
+//
+// @_fieldset.scss
+// Short description describing the file.
+ 
+.fieldset {
+  padding: 1.5rem 1rem 1rem;
+  border: 1px solid $gray-light-4;
+  &__legend {
+    display: block;
+    width: auto;
+    padding: 0 0.5rem;
+    white-space: normal;
+  }
+  &.form-item--inline {
+    display: block;
+    padding: 0;
+    border: none;
+    .fieldset {
+      @include media-breakpoint-up(md) {
+        &__legend {
+          float: left;
+          width: $form-item--label-width;
+          margin: 0;
+          padding-left: 0;
+          line-height: 1;
+        }
+        &-wrapper {
+          display: inline-block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Checkbox and radios fix.
+.radios--wrapper,
+.checkboxes--wrapper {
+  &.form-item--inline {
+    .fieldset-wrapper {
+      @include media-breakpoint-up(md) {
+        width: calc(100% - (#{$form-item--label-width} + .5rem));
+      }
+    }
+  }
+}

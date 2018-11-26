@@ -1,0 +1,8 @@
+{
+  "attributes": {
+      "Attribute()": {
+          "class": "form-item__label"
+      }
+  },
+  "title": "Form item label"
+}

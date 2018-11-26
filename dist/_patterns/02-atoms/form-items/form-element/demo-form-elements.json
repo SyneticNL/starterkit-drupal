@@ -1,0 +1,199 @@
+{
+  "form_elements": [
+    {
+      "include()": {
+        "pattern": "atoms-form-element",
+        "with": {
+          "attributes": {
+            "Attribute()": {
+              "class": "form-element"
+            }
+          },
+          "type": "text",
+          "name": "single",
+          "label_display": "before",
+          "label": {
+            "include()": {
+              "pattern": "atoms-label",
+              "with": {
+                "attributes": {
+                  "Attribute()": {
+                    "class": "form-item__label"
+                  }
+                },
+                "title": "Form Element"
+              }
+            }
+          },
+          "children": {
+            "include()": {
+              "pattern": "atoms-input-text-wide"
+            }
+          }
+        }
+      }
+    },
+    {
+      "include()": {
+        "pattern": "atoms-form-element",
+        "with": {
+          "attributes": {
+            "Attribute()": {
+              "class": "form-element"
+            }
+          },
+          "type": "text",
+          "name": "with-description",
+          "label_display": "before",
+          "label": {
+            "include()": {
+              "pattern": "atoms-label",
+              "with": {
+                "attributes": {
+                  "Attribute()": {
+                    "class": "form-item__label"
+                  }
+                },
+                "title": "Form element with description"
+              }
+            }
+          },
+          "children": {
+            "include()": {
+              "pattern": "atoms-input-text-wide"
+            }
+          },
+          "description_display": "after",
+          "description": {
+            "attributes": {
+                "Attribute()": {
+                    "class": [
+                      "description",
+                      "form-item__description"
+                    ]
+                }
+            },
+            "content": "Beschrijving bij het veld"
+          }
+        }
+      }
+    },
+    {
+      "include()": {
+        "pattern": "atoms-form-element",
+        "with": {
+          "attributes": {
+            "Attribute()": {
+              "class": "form-element"
+            }
+          },
+          "type": "text",
+          "name": "with-error",
+          "label_display": "before",
+          "label": {
+            "include()": {
+              "pattern": "atoms-label",
+              "with": {
+                "attributes": {
+                  "Attribute()": {
+                    "class": "form-item__label"
+                  }
+                },
+                "title": "Form element with errors"
+              }
+            }
+          },
+          "children": {
+            "include()": {
+              "pattern": "atoms-input-text-wide"
+            }
+          },
+          "errors": "Er gaat iets fout bij dit veld"
+        }
+      }
+    },
+    {
+      "include()": {
+        "pattern": "atoms-form-element",
+        "with": {
+          "attributes": {
+            "Attribute()": {
+              "class": "form-element"
+            }
+          },
+          "type": "text",
+          "name": "with-prefix-suffix",
+          "label_display": "before",
+          "label": {
+            "include()": {
+              "pattern": "atoms-label",
+              "with": {
+                "attributes": {
+                  "Attribute()": {
+                    "class": "form-item__label"
+                  }
+                },
+                "title": "Form element with prefix and suffix"
+              }
+            }
+          },
+          "children": {
+            "include()": {
+              "pattern": "atoms-input-text-wide"
+            }
+          },
+          "prefix": "€",
+          "suffix": ",-"
+        }
+      }
+    },
+    {
+      "include()": {
+        "pattern": "atoms-form-element",
+        "with": {
+          "attributes": {
+            "Attribute()": {
+              "class": "form-element"
+            }
+          },
+          "type": "text",
+          "name": "with-complete",
+          "label_display": "before",
+          "label": {
+            "include()": {
+              "pattern": "atoms-label",
+              "with": {
+                "attributes": {
+                  "Attribute()": {
+                    "class": "form-item__label"
+                  }
+                },
+                "title": "Form element all elements"
+              }
+            }
+          },
+          "children": {
+            "include()": {
+              "pattern": "atoms-input-text-wide"
+            }
+          },
+          "description_display": "after",
+          "description": {
+            "attributes": {
+              "Attribute()": {
+                "class": [
+                  "description",
+                  "form-item__description"
+                ]
+              }
+            },
+            "content": "Beschrijving bij dit veld"
+          },
+          "errors": "Er gaat iets fout bij dit veld.",
+          "prefix": "€",
+          "suffix": ",-"
+        }
+      }
+    }
+  ]
+}
