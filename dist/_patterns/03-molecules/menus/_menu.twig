@@ -83,7 +83,7 @@
       {{ link(item_title, item.url, add_attributes(link_attributes, bem(link_base_class, (link_modifiers), link_blockname, link_classes))) }}
 			{% if item.below and menu_level != '2' %}
 				<span class="{{ menu_name }}__expand-button {{ menu_name }}__expand-button--level-{{ menu_level }} js-menuItemExpand" role="button"><i class="icon-arrow-down2"></i></span>
-				{{ menus.menu_links(item.below, attributes, menu_level + 1, menu_name, main_classes) }}
+        {{ menus.menu_links(item.below, create_attribute().addClass('menu'), menu_level + 1, menu_class, main_classes) }}
 			{% endif %}
 		</li>
 	
